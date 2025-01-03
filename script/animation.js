@@ -1,4 +1,4 @@
-let latency = 10;
+let latency = 17;
 let notEnded = true
 
 
