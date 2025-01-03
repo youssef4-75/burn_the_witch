@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ninja-like Game</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/health-bar.css">
+</head>
+
+<body>
+    <div id="all">
+        <div id="newBody">
+
+            <header>
+                <div id="the-game-pointer">
+                    Max Points: <span id="max-points">0</span> | Current Points: <span id="current-points">0</span>
+                </div>
+            </header>
+
+            <div id="container">
+                <img src="static/witch.jpg" alt="a witch" id="bg">
+            </div>
+
+        </div>
+        <div id="health-bar">
+            <div id="my-health" style="--HP:100; --myHP:100"></div>
+        </div>
+    </div>
+
+    <script src="script/health.js"></script>
+    <script src="script/animation.js"></script>
+    <script src="script/pointing.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

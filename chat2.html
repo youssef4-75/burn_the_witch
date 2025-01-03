@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f1e4;
+            font-family: Arial, sans-serif;
+        }
+
+        .sandwich {
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+
+        .bread-top,
+        .bread-bottom {
+            width: 220px;
+            height: 50px;
+            background: linear-gradient(to bottom, #f4c276, #d6924b);
+            border-radius: 30px;
+            margin: 10px auto;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .bread-top::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #fff3cd;
+            border-radius: 50%;
+            top: 10px;
+            left: 30px;
+            box-shadow: 10px 10px #fff3cd, 50px 20px #fff3cd;
+        }
+
+        .lettuce {
+            width: 220px;
+            height: 15px;
+            background: #74c365;
+            margin: -5px auto;
+            border-radius: 15px;
+        }
+
+        .cheese {
+            width: 180px;
+            height: 20px;
+            background: linear-gradient(to bottom, #f9d14d, #d9b04f);
+            margin: 5px auto;
+            position: relative;
+        }
+
+        .cheese::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #f9d14d;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .tomato {
+            width: 150px;
+            height: 20px;
+            background: #e55b3c;
+            margin: 5px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .onion {
+            width: 170px;
+            height: 10px;
+            background: #d3c9ef;
+            margin: 5px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .meat {
+            width: 190px;
+            height: 25px;
+            background: #8b4513;
+            margin: 5px auto;
+            border-radius: 5px;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .bread-bottom {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sandwich">
+        <div class="bread-top"></div>
+        <div class="lettuce"></div>
+        <div class="cheese"></div>
+        <div class="tomato"></div>
+        <div class="onion"></div>
+        <div class="meat"></div>
+        <div class="bread-bottom"></div>
+    </div>
+</body>
+</html>
+

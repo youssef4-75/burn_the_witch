@@ -1,0 +1,18 @@
+
+
+#health-bar{
+    position: fixed;
+    width: 4vw;
+    height: 70vh;
+    border-radius: 17px;
+    background-color: grey;
+    translate: 37vh 3vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#my-health{
+    height: calc(100% * var(--myHP)/var(--HP));
+    background-color: red;
+    border-radius: 17px;
+}
